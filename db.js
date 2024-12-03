@@ -4,10 +4,10 @@ const responseMessage = document.getElementById('responseMessage');
 form.addEventListener('submit', async (event) => {
     event.preventDefault();  
 
-    const parametro = document.getElementById('parametro').value;
+    const parametro = document.getElementById('email').value;
 
     if (!parametro) {
-        responseMessage.textContent = 'El parámetro es requerido.';
+        responseMessage.textContent = 'El email es requerido.';
         return;
     }
 
@@ -24,7 +24,7 @@ form.addEventListener('submit', async (event) => {
 
         const responseData = await response.json();
         if (response.ok) {
-            responseMessage.textContent = `Parámetro insertado con éxito. ID: ${responseData.id}`;
+            responseMessage.textContent = `Email insertado con éxito. ID: ${responseData.id}`;
         } else {
             responseMessage.textContent = `Error: ${responseData.error || 'Algo salió mal'}`;
         }

@@ -214,11 +214,14 @@
     </table>
   </div>
 
-  <div class="container d-flex flex-column justify-content-center align-items-center">
+  <div class="container d-flex flex-column justify-content-center align-items-center gap-2" id="newsletter-section">
     <h3>NEWSLETTER</h3>
-    <form id="newsletter">
-      <input type="text" id="parametro">
-      <input type="submit" value="Suscribirme">
+    <p>
+      Unete a nuestro newsletter y sé el primero en enterarte de las noticias más importantes
+    </p>
+    <form id="newsletter" class="form d-flex flex-column gap-3">
+      <input type="text" id="email" placeholder="Email" class="form-control">
+      <input type="submit" value="Suscribirme" class="form-control btn btn-primary">
     </form>
   </div>
 
@@ -228,4 +231,19 @@
 </body>
 <script src="main.js"></script>
 <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+<script>
+  const div = document.getElementById('newsletter-section');
+  function verificarInternet() {
+      if (!navigator.onLine) {
+          div.style.display = 'none';  // Ocultar el div si hay conexión
+      }
+  }
+
+  // Verificar el estado de la conexión al cargar la página
+  verificarInternet();
+
+  // Escuchar los eventos de conexión y desconexión
+  window.addEventListener('online', verificarInternet);   // Sin los paréntesis
+  window.addEventListener('offline', verificarInternet);  // Sin los paréntesis
+</script>
 </html>
