@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="theme-color" content="#FFFF">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="app-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="apple-touch-icon" href="images/favicon.ico">
+    <link rel="apple-touch-startup-image" href="images/favicon.ico">
+
+    <link rel="manifest" href="manifest.json">
+
+    <title>The Meow World</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icono.jpg">
+    <script src="db.js" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+    <div class="container-fluid"> 
+      <a class="navbar-brand" href="#index">TheMeowWorld</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-white" href="#about">Acerca De</a>          
+          <a class="nav-link text-white" href="#characters">Enemigos</a>
+          <a class="nav-link text-white" href="#leaderboards">Leaderboard</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid d-flex bg-dark" id="index">
+      <div class="container d-flex flex-column justify-content-center align-items-center gap-5">
+          <h1>The Meow World</h1>
+      </div>
+      <div class="container d-flex justify-content-center">
+          <img src="images/icono.jpg" class="w-100 main-image" alt="menu">
+      </div>
+  </div>
+  <br>
+  <div class="container d-flex flex-column justify-content-center align-items-center my-5" id="about">
+      <h3>RECONTRUYE NUESTRO MUNDO</h3>        
+      <p>
+        En un mundo donde los animales intentan reconstruir la civilización, un explorador busca un líder legendario llamado "el elegido", que guiará la reconstrucción.      
+      </p>
+  </div>
+  <br>
+  <div class="container d-flex flex-column gap-5 my-5">
+      <div class="container d-flex">
+          <div class="container d-flex flex-column justify-content-center align-items-start gap-5">
+              <h5>Experiencia Inmersiva</h5>
+              <p>
+                Exploración no lineal en un mundo devastado con combates y acertijos estratégicos.
+              </p>
+          </div>
+          <div class="container-fluid d-flex justify-content-center">
+              <img src="images/gameplay2.jpeg" alt="imagen" class="w-100">
+          </div>
+      </div>
+    
+      <div class="container d-flex">
+          <div class="container-fluid d-flex justify-content-center">
+              <img src="images/mision.jpeg" alt="imagen" class="w-100">
+          </div>
+          <div class="container d-flex flex-column justify-content-center align-items-start gap-5">
+              <h5>Misiones Ingeniosas</h5>
+              <p>
+                Usa tu ingenio para resolver los acertijos, avanzar en las misiones y vencer a tus enemigos.
+              </p>
+          </div>
+      </div>
+    
+      <div class="container d-flex">
+        <div class="container d-flex flex-column justify-content-center align-items-start gap-5">
+            <h5>Enemigos Formidables</h5>
+            <p>
+              Enfrentate a hordas de enemigos de todo tipo, cada uno con habilidades únicas y con dificultades desafiantes.
+            </p>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <img src="images/enemigos.jpeg" alt="imagen" class="w-100">
+        </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid characters-container d-flex flex-column justify-content-center align-items-center my-5 gap-2" id="characters">
+    <h3>ENEMIGOS</h3>
+    <div class="characters">
+      <div class="card">
+        <img src="images/ghoul.jpg" alt="personaje" class="img-fluid">
+        <div class="card-info container h-100 p-3">
+          <div class="card-info-title">
+            Ente
+          </div>
+          <div class="car-info-text">
+            Alma en pena que deambula por las zonas abandonadas
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/rata.jpg" alt="personaje" class="img-fluid">
+        <div class="card-info container h-100 p-3">
+          <div class="card-info-title">
+            Rata Encapuchada
+          </div>
+          <div class="car-info-text">
+            Rata armada con un cuchillo
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/crow.jpg" alt="personaje" class="img-fluid">
+        <div class="card-info container h-100 p-3">
+          <div class="card-info-title">
+            Cuervo
+          </div>
+          <div class="car-info-text">
+            Cuervo armado con un arma, viste de negro 
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/salamandra.jpg" alt="personaje" class="img-fluid">
+        <div class="card-info container h-100 p-3">
+          <div class="card-info-title">
+            Salamandra
+          </div>
+          <div class="car-info-text">
+            Este enemigo cuenta con un gran sentido del olfato
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/oso.jpg" alt="personaje" class="img-fluid">
+        <div class="card-info container h-100 p-3">
+          <div class="card-info-title">
+            Oso Mutado
+          </div>
+          <div class="car-info-text">
+            Bestia enorme y resistente
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex flex-column justify-content-center align-items-center my-5 gap-2" id="leaderboards">
+    <h3>LEADERBOARDS</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Perfil</th>
+          <th>Nombre</th>
+          <th>Record</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><img src="images/perfil5.jpg" alt="greender"></td>
+          <td>Greender</td>
+          <td>27:58:15</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img src="images/iconoDuzz.jpg" alt="duzz"></td>
+          <td>Duzz</td>
+          <td>29:12:06</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img src="images/iconoChanlu.jpg" alt="chanlu"></td>
+          <td>ChanLu</td>
+          <td>33:39:28</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img src="images/perfil1.jpg" alt="p1"></td>
+          <td>ShadowStrike</td>
+          <td>35:01:48</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><img src="images/perfil2.jpg" alt="p2"></td>
+          <td>PixelFury</td>
+          <td>39:12:10</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><img src="images/perfil3.jpg" alt="p3"></td>
+          <td>VenomousKnight</td>
+          <td>40:01:08</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><img src="images/perfil4.jpg" alt="p4"></td>
+          <td>ViralGlitch</td>
+          <td>41:08:53</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h3>NEWSLETTER</h3>
+    <form id="newsletter">
+      <input type="text" id="parametro">
+      <input type="submit" value="Suscribirme">
+    </form>
+  </div>
+
+  <div class="footer container-fluid d-flex align-items-center p-4 bg-dark">
+    <h5>TheMeowWorld</h5>
+  </div>    
+</body>
+<script src="main.js"></script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</html>
