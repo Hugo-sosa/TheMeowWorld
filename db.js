@@ -14,7 +14,7 @@ form.addEventListener('submit', async (event) => {
     const data = { parametro: parametro };
 
     try {
-        const response = await fetch('https://b165-2806-2f0-34e1-f2fc-d0de-c74f-1927-c7d5.ngrok-free.app/insertar', {
+        const response = await fetch('https://1667-2806-2f0-34e1-f2fc-4869-1b06-36a1-fb7a.ngrok-free.app/insertar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
